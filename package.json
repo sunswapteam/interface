@@ -1,0 +1,77 @@
+{
+  "name": "swap-front",
+  "version": "1.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "@babel/plugin-proposal-decorators": "^7.10.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.3.4",
+    "axios": "^0.19.2",
+    "bignumber": "^1.1.0",
+    "cross-env": "^7.0.2",
+    "customize-cra": "^1.0.0",
+    "echarts": "^4.8.0",
+    "echarts-for-react": "^2.0.16",
+    "husky": "^4.3.0",
+    "invariant": "^2.2.4",
+    "ismobilejs": "^1.1.1",
+    "lint-staged": "^10.4.2",
+    "lodash": "^4.17.15",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "moment": "^2.27.0",
+    "prettier": "^2.1.2",
+    "query-string": "^6.13.1",
+    "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
+    "react-countup": "^4.4.0",
+    "react-dom": "^16.13.1",
+    "react-intl-universal": "^2.2.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-sparklines": "^1.7.0",
+    "sass": "^1.26.8",
+    "tronweb": "^4.0.1",
+    "validator": "^13.5.2"
+  },
+  "scripts": {
+    "start": "PORT=18096 cross-env REACT_APP_ENV=test react-app-rewired start",
+    "startPro": "PORT=18098 react-app-rewired start",
+    "startTestPro": "PORT=18099 react-app-rewired start",
+    "testPro": "PORT=18099 cross-env REACT_APP_ENV=testPro react-app-rewired start",
+    "startTest": "PORT=18099 cross-env REACT_APP_ENV=qaTest react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "cross-env REACT_APP_ENV=test react-app-rewired build",
+    "prdTest": "cross-env REACT_APP_ENV=prdTest react-app-rewired build",
+    "eject": "react-scripts eject",
+    "clean": "rm -rf node_modules && npm install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

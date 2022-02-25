@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Swap兑换页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SunSwap_pop" transform="translate(-853.000000, -260.000000)" fill="#666666">
+            <g id="Group-23" transform="translate(290.000000, 204.000000)">
+                <g id="Close" transform="translate(571.142136, 63.727922) rotate(-45.000000) translate(-571.142136, -63.727922) translate(561.142136, 53.727922)">
+                    <path d="M1.54477549,8.28350733 L18.0153637,8.28350733 C18.6651105,8.28350733 19.1918343,8.81023115 19.1918343,9.45997791 L19.1918343,9.45997791 C19.1918343,10.1097247 18.6651105,10.6364485 18.0153637,10.6364485 L1.54477549,10.6364485 C0.895028724,10.6364485 0.3683049,10.1097247 0.3683049,9.45997791 L0.3683049,9.45997791 C0.3683049,8.81023115 0.895028724,8.28350733 1.54477549,8.28350733 Z" id="Rectangle" transform="translate(9.780070, 9.459978) rotate(-270.000000) translate(-9.780070, -9.459978) "></path>
+                    <rect id="Rectangle-Copy-7" x="0.243655037" y="8.15885746" width="18.8235294" height="2.35294118" rx="1.17647059"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

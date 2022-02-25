@@ -1,0 +1,152 @@
+.kline-chart-loading {
+  .tv-spinner {
+    // display: none;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: calc(50% - 0.5em);
+    left: calc(50% - 0.5em);
+    margin: 0 auto;
+    color: #37a6ef;
+    animation: tv-spinner__container-rotate 0.9s linear infinite;
+    will-change: transform;
+    direction: ltr;
+  }
+
+  .tv-spinner--size_mini {
+    font-size: 16px;
+  }
+
+  .tv-spinner--size_medium {
+    font-size: 32px;
+  }
+
+  .tv-spinner--size_large {
+    font-size: 56px;
+  }
+
+  .tv-spinner--size_mini .tv-spinner__width_element:after {
+    border-width: 2px;
+  }
+
+  .tv-spinner--size_medium .tv-spinner__width_element:after {
+    border-width: 3px;
+  }
+
+  .tv-spinner--size_large .tv-spinner__width_element:after {
+    border-width: 4px;
+  }
+
+  .tv-spinner--shown {
+    display: block;
+  }
+
+  .tv-spinner__spinner-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    color: currentColor;
+    transform: rotate(90deg);
+    /**
+           * Patch the gap that appear between the two adjacent div.circle-clipper while the
+           * spinner is rotating (appears on Chrome 50, Safari 9.1.1, and Edge).
+           */
+  }
+
+  .tv-spinner__spinner-layer::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    border-width: 0.07em;
+    border-radius: 50%;
+    left: 45%;
+    width: 10%;
+    border-top-style: solid;
+  }
+
+  .tv-spinner__background {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .tv-spinner__background::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    border-radius: 50%;
+    bottom: 0;
+    width: 100%;
+    border-color: rgba(135, 151, 165, 0.2);
+    border-style: solid;
+  }
+
+  .tv-spinner__circle-clipper {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .tv-spinner__circle-clipper::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    border-radius: 50%;
+    bottom: 0;
+    width: 200%;
+    border-style: solid;
+    border-bottom-color: transparent;
+    animation-duration: 1.4s;
+    animation-timing-function: cubic-bezier(0.36, 0, 0.37, 0.99);
+    animation-iteration-count: 1;
+    will-change: transform;
+  }
+
+  .tv-spinner__circle-clipper--left::after {
+    left: 0;
+    border-right-color: transparent;
+    transform: rotate(0deg);
+    animation-name: tv-spinner__left-spin;
+  }
+
+  .tv-spinner__circle-clipper--right::after {
+    // left: -100%;
+    border-left-color: transparent;
+    transform: rotate(-124deg);
+    animation-name: tv-spinner__right-spin;
+  }
+
+  @keyframes tv-spinner__container-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes tv-spinner__left-spin {
+    0% {
+      transform: rotate(130deg);
+    }
+
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes tv-spinner__right-spin {
+    0% {
+      transform: rotate(-130deg);
+    }
+
+    to {
+      transform: rotate(-124deg);
+    }
+  }
+}

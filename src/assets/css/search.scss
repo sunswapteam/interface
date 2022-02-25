@@ -1,0 +1,130 @@
+.dropdown-item-token {
+  padding-left: 20px;
+
+  img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .trxLogo {
+    margin-left: -5px;
+  }
+
+  .name {
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+    margin-left: 14px;
+    padding: 21px 0;
+    display: inline-block;
+  }
+}
+
+.dropdown-item-title {
+  display: block;
+  padding: 20px;
+}
+
+.ant-select-item-group .dropdown-item-title {
+  padding: 10px 20px;
+}
+
+.search-more {
+  padding: 10px 20px;
+  font-size: 12px;
+  display: inline-block;
+  color: #434be0;
+  cursor: pointer;
+}
+
+body .certain-category-search-dropdown #rc_select_0_list+div {
+  // height: 225px !important;
+  // max-height: 225px !important;
+}
+
+.ant-select-item {
+  padding: 0;
+
+  &:first-child {
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
+.search-container {
+  font-size: 14px;
+  color: rgb(255, 255, 255, 0.7);
+
+  .ant-select.ant-select-auto-complete.ant-select-single.ant-select-customize-input.ant-select-show-search,
+  .ant-select-selector {
+    // background: rgb(#edeefc, 0.25);
+    border-radius: 10px;
+  }
+
+  .ant-input-affix-wrapper-lg {
+    padding: 16px 20px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    opacity: 0.7;
+    font-family: AvenirNext-Regular;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    opacity: 0.7;
+    font-family: AvenirNext-Regular;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .ant-input-affix-wrapper>input.ant-input {
+    background: transparent;
+  }
+
+  .ant-select-single .ant-select-selector .ant-select-selection-search-input {
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  input {
+    color: #fff;
+  }
+}
+
+::placeholder {
+  opacity: 0.7;
+  font-family: AvenirNext-Regular;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.ant-input-prefix {
+  color: #fff;
+  margin-right: 20px;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .search-container {
+    .ant-input-affix-wrapper-lg {
+      padding: 6.5px 11px;
+    }
+
+    .ant-input-prefix {
+      margin-right: 4px;
+    }
+  }
+}

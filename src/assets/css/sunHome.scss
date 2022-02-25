@@ -1,0 +1,398 @@
+$blue: #5915e1;
+$hoverBlue: #3940b7;
+$purple: rgba(72, 80, 229, 0.2);
+$hoverPurple: #bdc0f5;
+
+.sun-home {
+  padding: 70px 40px;
+  background: url(../images/sun-bg.png) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 235px;
+
+  .mt-30 {
+    margin-top: 30px;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  .mt-10 {
+    margin-top: 10px;
+  }
+
+  .mt-5 {
+    margin-top: 5px;
+  }
+
+  .left-coin {
+    position: absolute;
+    width: 25%;
+    left: 1%;
+    top: 30px;
+  }
+
+  .right-coin {
+    position: absolute;
+    right: -6%;
+    top: 30px;
+    width: 30%;
+  }
+
+  .limit-box {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 9;
+  }
+
+  .title-box {
+    position: relative;
+    margin-bottom: 10px;
+
+    .sun-title {
+      font-family: Avenir Next;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 4rem;
+      line-height: 82px;
+      text-align: center;
+      background: linear-gradient(90deg, #1e09a3 0.94%, #08bac6 48.8%, #f86817 98.95%);
+      -webkit-background-clip: text;
+      color: transparent;
+
+      &.ab {
+        position: absolute;
+        top: -2px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-left: -2px;
+        background: none;
+        color: #fff;
+      }
+    }
+  }
+
+  .sun-desc {
+    text-align: center;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 22px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    a {
+      font-family: PingFang SC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: underline;
+      padding-right: 15px;
+      background: url(../images/right-arrow.svg) right no-repeat;
+    }
+  }
+
+  .sunswap-title {
+    font-family: PingFang SC;
+    font-style: normal;
+    // font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .sun-swap {
+    width: 504px;
+    margin: 10px auto;
+    padding: 40px;
+    background: #fff;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .sunswap-top,
+  .sunswap-bottom {
+    // width: 504px;
+  }
+
+  .sunswap-top {
+    .shadow-box {
+      box-shadow: 0px 10px 40px rgba(21, 55, 156, 0.06);
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    .available,
+    .balance {
+      text-align: right;
+    }
+
+    .available-val {
+      padding-right: 25px;
+      background: url(../images/sunIcon.png) right no-repeat;
+      background-size: 20px 20px;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+      font-family: PingFang SC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .balance-val {
+      padding-right: 25px;
+      background: url(../images/new-sun.svg) right no-repeat;
+      background-size: 20px 20px;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+      font-family: PingFang SC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .uni {
+      margin-left: 5px;
+      line-height: 14px;
+      font-family: Avenir Next;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.3rem;
+      color: #333;
+      padding-top: 2px;
+    }
+
+    .ant-input-affix-wrapper {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+
+      &:hover {
+        border: none;
+        box-shadow: none;
+      }
+
+      > input.ant-input {
+        background: transparent;
+        font-family: PingFang SC;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333;
+
+        &::placeholder {
+          color: #999;
+        }
+
+        &:hover {
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .swap-val {
+      .ant-input-suffix {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      button {
+        background: none;
+        margin-left: 5px;
+        cursor: pointer;
+        background: #ff8e18;
+        border-radius: 9px;
+        color: #fff;
+        padding: 2px 10px;
+        font-size: 12px;
+      }
+    }
+
+    .arrow {
+      text-align: center;
+      margin: 20px 0;
+
+      img {
+        width: 15px;
+      }
+    }
+
+    .new-sun {
+      width: 20px;
+      height: 20px;
+    }
+
+    .receive-val {
+      .ant-input-affix-wrapper-disabled {
+        color: #333;
+        background: transparent;
+        border: none;
+        cursor: unset;
+        padding: 0;
+
+        input {
+          cursor: unset;
+          color: #666;
+        }
+      }
+    }
+
+    .swap-btn {
+      color: #fff;
+      border-radius: 0px;
+      width: 100%;
+      height: 56px;
+      line-height: 56px;
+      font-size: 14px;
+      margin-top: 20px;
+      cursor: pointer;
+      background: #5915e1;
+      // box-shadow: 0px 10px 40px rgba(72, 80, 229, 0.2);
+      border-radius: 20px;
+      margin-top: 40px;
+
+      &:disabled {
+        cursor: not-allowed;
+        background: #ccc;
+      }
+    }
+
+    .swap-tip {
+      margin-top: 10px;
+      color: #666;
+      font-size: 12px;
+    }
+  }
+
+  .sunswap-bottom {
+    position: relative;
+    margin-top: 30px;
+    padding: 0 0px;
+
+    .dash-line {
+      border-top: 1px dashed rgba(55, 111, 228, 0.4);
+      position: absolute;
+      top: 0;
+      left: -45px;
+      width: 506px;
+      height: 1px;
+    }
+
+    .half-circle {
+      position: absolute;
+      top: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background: #3771e5;
+
+      &.c-left {
+        left: -50px;
+      }
+
+      &.c-right {
+        right: -50px;
+        background: #3975ea;
+      }
+    }
+
+    .li-title {
+      list-style: disc;
+      margin-left: -10px;
+      font-weight: 500;
+      font-size: 1.1rem;
+
+      &::marker {
+        color: #5915e1;
+      }
+    }
+
+    .right-desc {
+      margin-left: 10px;
+
+      .addr-name,
+      .rates,
+      .words {
+        margin-top: 5px;
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #999999;
+      }
+
+      .goto-mining {
+        padding-right: 15px;
+        color: $blue;
+        font-size: 14px;
+        text-decoration: underline;
+        background: url(../images/right-arrow-blue.svg) right no-repeat;
+      }
+    }
+  }
+}
+
+body .ant-modal.trans-modal.swap-sun {
+  margin-left: calc(50% - 95px);
+}
+
+body .ant-modal.login-modal {
+  margin-left: calc(50% - 170px);
+}
+
+@media screen and (max-width: 1000px) {
+  body .ant-modal.trans-modal.swap-sun {
+    margin-left: unset;
+  }
+
+  .sun-home .limit-box,
+  .sun-home .sun-swap {
+    max-width: 100%;
+  }
+
+  .sun-home {
+    padding: 70px 10px;
+    background: url(../images/mobile-sunbg.svg) no-repeat;
+    border-radius: 0;
+    margin-left: 0;
+  }
+
+  .sun-home .title-box .sun-title {
+    font-size: 2rem;
+    line-height: 50px;
+    padding: 0 20px;
+  }
+
+  .sun-home .sun-swap {
+    padding: 20px;
+  }
+
+  .sun-home .sunswap-bottom .half-circle {
+    display: none;
+  }
+
+  .sun-home .right-coin,
+  .sun-home .left-coin {
+    top: -5px;
+  }
+}

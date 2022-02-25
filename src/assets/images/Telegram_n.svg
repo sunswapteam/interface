@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Telegram_n</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-292.000000, -1962.000000)">
+            <g id="图标" transform="translate(0.000000, 1464.000000)">
+                <g id="编组-17" transform="translate(81.000000, 381.000000)">
+                    <g id="Telegram_n" transform="translate(211.000000, 117.000000)">
+                        <rect id="Rectangle" fill="#5915E1" x="0" y="0" width="24" height="24" rx="5"></rect>
+                        <g id="telegram" transform="translate(5.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M4.51595122,9.38643275 L4.70227317,6.59488304 L9.81027805,2.02880117 C10.0365512,1.82419591 9.76382927,1.72489766 9.46461951,1.90305556 L3.15876585,5.85583333 L0.431443902,4.99799708 C-0.153482927,4.83331871 -0.159980488,4.43059942 0.564804878,4.13967836 L11.187439,0.0751169591 C11.6729561,-0.14245614 12.1385122,0.193888889 11.9521902,0.933450292 L10.1429561,9.38641813 C10.0165756,9.98673977 9.65094146,10.1319591 9.14543415,9.855 L6.39160976,7.83546784 L5.06789268,9.10947368 C4.91503902,9.26118421 4.78817561,9.38643275 4.51593659,9.38643275 L4.51595122,9.38643275 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

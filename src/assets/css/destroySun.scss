@@ -1,0 +1,304 @@
+.destroy-sun-home {
+  background: #140736 url(../images/bg.jpg) no-repeat;
+  font-family: Avenir Next;
+  padding: 100px 5% 140px;
+  background-size: 100% 100%;
+  margin-left: 235px;
+  min-height: 100vh;
+
+  .page-title,
+  .page-subtitle {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: center;
+    font-style: normal;
+  }
+
+  .page-title {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 8px;
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 100px;
+  }
+
+  .view-data {
+    background: #ffffff;
+    border-radius: 15px;
+
+    .view-data-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      padding: 0 20px;
+      border-bottom: #d8d8d8 1px solid;
+
+      span:first-child {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #333333;
+      }
+
+      span:nth-child(2) {
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: #6726eb;
+        height: 20px;
+        background: #efe7ff;
+        border-radius: 15px;
+        text-align: center;
+        padding: 0 10px;
+      }
+    }
+
+    .rules-modal {
+      width: auto !important;
+      transform-origin: initial !important;
+
+      .ant-modal-content {
+        position: relative;
+        padding: 30px 30px 40px 30px;
+      }
+
+      .ant-modal-header {
+        margin-bottom: 25px;
+        padding: 0;
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+
+        .ant-modal-title {
+          // font-size: 24px;
+        }
+      }
+
+      .ant-modal-body p {
+        text-align: left;
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        // line-height: 20px;
+        letter-spacing: 0.5px;
+        color: #666666;
+      }
+
+      .ant-modal-close {
+        right: 30px;
+
+        .ant-modal-close-icon {
+          width: 19px;
+          height: 24px;
+          background-size: contain;
+        }
+      }
+    }
+
+    .view-data-content {
+      height: 130px;
+      display: flex;
+      justify-content: space-evenly;
+
+      .view-data-item {
+        text-align: center;
+        padding-top: 40px;
+        flex: 1;
+
+        .name {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: #333333;
+        }
+
+        .value {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 27px;
+
+          color: #333333;
+        }
+      }
+    }
+  }
+
+  .destroy-record-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #ffffff;
+    margin: 20px 0 14px 0;
+  }
+
+  .destroy-record {
+    background: #ffffff;
+    // box-shadow: 0px 30px 300px rgba(38, 46, 209, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+
+    .show-detail {
+      // width: 135px;
+      height: 35px;
+      background: #5816e0;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 0 15px;
+
+      &:hover {
+        background-color: #4711b4;
+      }
+    }
+
+    .destroy-record-table {
+
+      .ant-table-thead,
+      .ant-table-tbody {
+
+        &>tr>th,
+        &>tr>td {
+          padding: 16px 20px;
+        }
+
+        .ant-table-cell {
+          width: 25%;
+
+          &.ant-table-cell:nth-child(1) {
+            width: 30%;
+          }
+
+          &.ant-table-cell:nth-child(3) {
+            // width: 15%;
+          }
+        }
+
+        .ant-table-cell:nth-child(n + 3) {
+          text-align: right;
+        }
+      }
+
+      .ant-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ant-pagination-item,
+        .ant-pagination-jump-next,
+        .ant-pagination-jump-prev {
+          // width: 20px;
+          height: 20px;
+          mix-blend-mode: normal;
+          border-radius: 5px;
+          margin-right: 10px;
+          min-width: 20px;
+          border-color: #d8d8d8;
+
+          a {
+            color: #999999;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 19px;
+          }
+        }
+
+        .ant-pagination-item:nth-last-child(2) {
+          margin-right: 0px;
+
+          a {
+            color: #5816e0;
+          }
+        }
+
+        .ant-pagination-item-active {
+          border: none;
+          background-color: rgba(72, 80, 229, 0.1);
+
+          a {
+            color: #5816e0;
+            line-height: 20px;
+          }
+        }
+
+        .ant-pagination-jump-next,
+        .ant-pagination-jump-prev {
+          border: 1px solid #d8d8d8;
+
+          .ant-pagination-item-ellipsis {
+            transform: scale(0.5);
+            width: 30px;
+            margin-left: -6px;
+            margin-bottom: -10px;
+          }
+        }
+
+        .ant-pagination-prev,
+        .ant-pagination-next {
+          a {
+            position: relative;
+            top: -1px;
+          }
+        }
+
+        .ant-pagination-disabled {
+          opacity: 0.25;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .destroy-sun-home {
+    width: 100%;
+    padding: 50px 15px 38px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+
+    .page-title {
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    .page-subtitle {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .view-data .view-data-content {
+      display: block;
+      padding: 10px 0 30px 0;
+      height: auto;
+
+      .view-data-item {
+        width: 100%;
+        padding-top: 20px;
+
+        .name {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}

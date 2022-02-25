@@ -1,0 +1,295 @@
+html .ant-modal.pool-modal.migrateModal {
+  margin-top: -100px;
+}
+
+html .ant-modal.pool-modal .ant-modal-content {
+  padding: 30px 45px;
+  border-radius: 20px;
+
+  .common-tool {
+    margin: 0;
+    align-items: center;
+  }
+
+  .common-tool-title {
+    color: #999;
+    margin-right: 10px;
+    width: calc(100% - 30px);
+  }
+
+  // .step1 {
+  //   margin-top: -30px;
+  // }
+
+  .title {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1a1a1a;
+    height: 22px;
+    margin-bottom: 25px;
+    margin-top: 0 !important;
+    position: relative;
+    text-align: center;
+
+    &.green {
+      font-family: PingFangSC-Medium;
+      font-size: 25px;
+      color: #16c378;
+      margin: 30px 0 15px !important;
+    }
+  }
+
+  .desc {
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+    height: 32px;
+    margin-bottom: 27px;
+    text-align: left;
+  }
+
+  .info {
+    // width: 540px;
+    // height: 232px;
+    background: #ffffff;
+    box-shadow: 0px 3px 24px rgba(51, 1, 138, 0.0808293);
+    border-radius: 20px;
+    padding: 20px 25px;
+    margin: 0 auto;
+    text-align: left;
+
+    &.v2 {
+      // height: 276px;
+    }
+
+    .lptokens {
+      width: 100%;
+      height: 24px;
+      margin-bottom: 20px;
+
+      .logo {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+
+        &:nth-child(2) {
+          margin-left: -5px;
+          margin-right: 8px;
+        }
+      }
+
+      .name {
+        font-family: Avenir Next;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #333;
+        margin-right: 8px;
+      }
+    }
+
+    .box {
+      width: 100%;
+      height: 121px;
+      background: #f7f7f7;
+      mix-blend-mode: normal;
+      border-radius: 16px;
+      margin: 0 auto;
+      position: relative;
+      padding: 16px;
+
+      .line-box {
+        position: absolute;
+        top: 34px;
+        left: 27px;
+        opacity: 0.3;
+        border: 1px dashed #727272;
+        border-width: 0 0 1px 1px;
+        width: 11px;
+        height: 65px;
+
+        span {
+          height: 32px;
+          width: 11px;
+          border-bottom: 1px dashed #727272;
+          display: block;
+        }
+      }
+
+      .lp {
+        width: 100%;
+        height: 16px;
+        margin-bottom: 22px;
+
+        .logo {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+
+          &:nth-child(2) {
+            margin-left: -3px;
+            margin-right: 8px;
+          }
+        }
+
+        .text {
+          font-size: 14px;
+          line-height: 16px;
+          color: rgba(26, 26, 26, 0.6);
+        }
+
+        .amount {
+          font-size: 14px;
+          line-height: 16px;
+          color: rgba(26, 26, 26, 0.6);
+          float: right;
+          padding: 0;
+          border: 0;
+        }
+      }
+
+      .token {
+        width: 100%;
+        height: 14px;
+        padding-left: 21px;
+        margin-bottom: 18px;
+
+        .logo {
+          width: 14px;
+          height: 14px;
+          margin-right: 6px;
+        }
+
+        .text {
+          font-size: 14px;
+          line-height: 14px;
+          color: rgba(26, 26, 26, 0.6);
+        }
+
+        .amount {
+          font-size: 14px;
+          line-height: 14px;
+          color: rgba(26, 26, 26, 0.6);
+          float: right;
+          padding: 0;
+          border: 0;
+        }
+      }
+    }
+  }
+
+  .advanced {
+    width: 100%;
+    height: 57px;
+    background: url(../images/migrate-arrow.svg) no-repeat center;
+    padding: 20px 0;
+
+    span {
+      float: right;
+      color: #5915e1;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+
+  .version {
+    width: 42px;
+    height: 20px;
+    background: #f7f7f7;
+    border-radius: 9px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(26, 26, 26, 0.6);
+    display: inline-block;
+    text-align: center;
+  }
+
+  .rate {
+    // height: 20px;
+    line-height: 20px;
+    color: #5915e1;
+    font-family: PingFang SC;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+
+    em {
+      width: 20px;
+      height: 20px;
+      background: url(../images/exchange-rate.svg) no-repeat right;
+      margin-left: 9px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    span {
+      float: right;
+      margin-right: 8px;
+    }
+
+    .value {
+      margin-right: 15px;
+    }
+  }
+
+  .refunded {
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    width: 100%;
+    line-height: 17px;
+    color: #999;
+    margin-top: 9px;
+    overflow: hidden;
+  }
+
+  .btn {
+    width: 100%;
+    height: 50px;
+    background: #5915e1;
+    border-radius: 10px;
+    font-family: PingFang SC;
+    font-size: 16px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    &:hover {
+      background: #4711b4;
+    }
+  }
+
+  .step2 {
+    position: relative;
+
+    .version {
+      background: rgba(89, 21, 225, 0.1);
+      font-family: Avenir Next;
+      color: #5915e1;
+      position: absolute;
+      top: 47px;
+      left: 50%;
+      margin-left: -79px;
+
+      &:nth-child(2) {
+        margin-left: 38px;
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 20px;
+      background: url(../images/migrate-line.svg) no-repeat center;
+      margin-bottom: 20px;
+    }
+  }
+}

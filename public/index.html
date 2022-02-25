@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:url" content="https://sunswap.com/"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="SunSwap is a TRON-based decentralized trading protocol for automated liquidity provision and an open financial market accessible to all.SunSwap supports secure and immediate exchange between any TRC20 tokens. Market makers will get service fees continuously without the platform taking any commission.SunSwap，为自动化流动性供应商提供基于波场的去中心化交易协议，是任何用户都可以参与的开放金融市场。支持任意TRC20 通证兑换，安全可靠，即时成交，成为做市商获取持续交易手续费，平台不收取任何佣金。"
+    />
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="SunSwap"/>
+    <meta property="og:description" content="SunSwap is a TRON-based decentralized trading protocol for automated liquidity provision and an open financial market accessible to all.SunSwap supports secure and immediate exchange between any TRC20 tokens. Market makers will get service fees continuously without the platform taking any commission."/>
+    <meta property="og:title" content="SunSwap"/>
+    <meta property="og:image" content="https://sunswap.com/images/twitter-card-sunswap.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@sunwap"/>
+    <meta name="twitter:title" content="SunSwap"/>
+    <meta name="twitter:description" content="SunSwap is a TRON-based decentralized trading protocol for automated liquidity provision and an open financial market accessible to all.SunSwap supports secure and immediate exchange between any TRC20 tokens. Market makers will get service fees continuously without the platform taking any commission."/>
+    <meta name="twitter:image" content="https://sunswap.com/images/twitter-card-sunswap.jpg"/>
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>SunSwap | A decentralized exchange protocol for automated liquidity provision on TRON</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177464249-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-177464249-1');
+
+      if (window.performance) {
+      // Gets the number of milliseconds since page load
+      // (and rounds the result since the value must be an integer).
+        var timeSincePageLoad = Math.round(performance.now());
+
+        // Sends the timing event to Google Analytics.
+        gtag('event', 'timing_complete', {
+          'name': 'load',
+          'value': timeSincePageLoad,
+          'event_category': 'JS Dependencies'
+        });
+      }
+    </script>
+  </body>
+</html>

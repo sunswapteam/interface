@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="112px" viewBox="0 0 112 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <filter x="-180.6%" y="-152.8%" width="461.1%" height="461.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.396078431   0 0 0 0 0.976470588  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-71.000000, -1751.000000)">
+            <g id="图标" transform="translate(0.000000, 1464.000000)">
+                <g id="Search" transform="translate(109.000000, 315.000000)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#5915E1" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="放大镜" transform="translate(10.000000, 10.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M7.55071602,15.1010806 C3.38269093,15.096952 0.00470676236,11.7192879 0,7.55107984 C-1.56389101e-05,3.38747455 3.38729409,0 7.55071602,0 C11.7183441,0.00469729565 15.0957028,3.38220469 15.1003999,7.55001635 C15.1003999,11.7136216 11.7141536,15.1010806 7.55071602,15.1010806 Z M7.55071602,1.43698198 C4.17619655,1.44051628 1.44149202,4.17534826 1.43796651,7.55001635 C1.44267115,10.9240204 4.1768598,13.6578538 7.55071602,13.6619716 C10.9241569,13.6572681 13.6576988,10.9236058 13.6624021,7.55001635 C13.6588777,4.17576292 10.9248202,1.44110226 7.55071602,1.43698198 Z M15.2797469,15.9999978 C15.0892653,15.9995983 14.9066431,15.9240124 14.7715918,15.7896765 L13.1531992,14.1712126 C13.0181253,14.0365996 12.9422022,13.8537448 12.9422022,13.6630429 C12.9422022,13.472341 13.0181253,13.2894862 13.1531992,13.1548732 C13.2878062,13.0197934 13.470653,12.943867 13.6613465,12.943867 C13.8520399,12.943867 14.0348867,13.0197934 14.1694937,13.1548732 L15.787902,14.7733371 C15.9944498,14.9783083 16.0567288,15.2877482 15.9455586,15.5566702 C15.8343885,15.8255922 15.5717931,16.0007198 15.2808103,15.9999978 L15.2797469,15.9999978 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

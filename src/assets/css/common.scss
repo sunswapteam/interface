@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  width: 100%;
+  overscroll-behavior: none;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+input,
+select,
+button {
+  font-size: 100%;
+  outline: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+
+button {
+  border: 0;
+  background-clip: padding-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  border: none;
+  //vertical-align: baseline;
+}
+
+a,
+a:link,
+a:visited {
+  color: #5915e1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+textarea,
+input {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+span,
+p,
+div {
+  word-wrap: break-word;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.flex {
+  display: flex;
+
+  &.between {
+    justify-content: space-between;
+  }
+
+  &.ai-center {
+    align-items: center;
+  }
+}
+
+.flexB {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left !important;
+  justify-content: flex-start;
+}
+
+.right {
+  text-align: right;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.main {
+  padding: 0 20px 20px 20px;
+}
+
+.top10 {
+  margin-top: 10px;
+}
+
+.left10 {
+  margin-left: 10px;
+}
+
+.left15 {
+  margin-left: 15px;
+}
+
+.right15 {
+  margin-right: 15px;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.left20 {
+  margin-left: 20px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.mt3 {
+  margin-top: 3px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.typo-text-link {
+  color: #5915e1;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.color-red {
+  color: #ff8e18;
+}
+
+.color-green {
+  color: #16c378;
+}
+
+.token-logo {
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+a {
+  font-family: AvenirNext-Medium;
+  font-size: 16px;
+  color: #5915e1;
+}
+
+.ant-modal {
+
+  &.unfinished-pop,
+  &.select-modal,
+  &.pool-modal,
+  &.zoom-enter,
+  &.zoom-appear,
+  &.setting-modal,
+  &.list-addtoken-modal,
+  &.confirm-swap-modal,
+  &.swap-sun,
+  &.remove-modal,
+  &.login-modal {
+    margin-left: 235px !important;
+    // top: 50%;
+    // transform: translateY(-50%) scale(1);
+    transform-origin: center !important;
+  }
+
+  &.confirm-swap-modal,
+  &.add-gai,
+  &.remove-modal,
+  &.login-modal {
+    text-align: center !important;
+  }
+}
+
+.price-chart-wrap {
+  padding: 14px 20px;
+  font-family: AvenirNext-Regular;
+  font-size: 14px;
+  color: #333;
+
+  .token-pairs {
+    >div {
+      &.view-token-box {
+        a:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+
+      a {
+        color: #5915e1;
+      }
+
+      span {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 14px;
+      }
+    }
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+  }
+}
+
+.price-chart-popover {
+  .ant-popover-arrow {
+    display: none;
+  }
+
+  .chart-content {
+    .chart-title {
+      display: flex;
+      justify-content: space-between;
+      font-family: PingFangSC-Regular;
+
+      h4 {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #333333;
+      }
+
+      p {
+        font-size: 12px;
+        color: #666666;
+      }
+    }
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.welfare-modal {
+  top: calc(50% - 200px) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .ant-modal {
+
+    &.unfinished-pop,
+    &.select-modal,
+    &.pool-modal,
+    &.zoom-enter,
+    &.zoom-appear,
+    &.setting-modal,
+    &.list-addtoken-modal,
+    &.confirm-swap-modal,
+    &.swap-sun,
+    &.remove-modal,
+    &.login-modal {
+      margin-left: 0 !important;
+      transform-origin: center !important;
+    }
+
+    &.confirm-swap-modal,
+    &.add-gai,
+    &.remove-modal,
+    &.login-modal {
+      text-align: center !important;
+    }
+  }
+}
